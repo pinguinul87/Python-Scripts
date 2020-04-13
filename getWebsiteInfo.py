@@ -7,6 +7,7 @@ Will return the location, city, country and IP address beased on the data stored
 import sys
 import json
 import socket
+import pprint
 import requests
 
 #How to use the script
@@ -16,7 +17,7 @@ if len(sys.argv) < 2:
 
 #Make request and print http header info
 rqst_one = requests.get("https://"+sys.argv[1])
-print("\n"+str(rqst_one.headers))
+print("\n"+pprint.pprint(str(rqst_one.headers)))
 
 #Get IP address
 getIP = socket.gethostbyname(sys.argv[1])
@@ -24,6 +25,7 @@ print("\nThe IP address of "+sys.argv[1]+" is: "+getIP + "\n")
 
 rqst_two = requests.get("https://ipinfo.io/"+getIP +"/json")
 resp = json.loads(rqst_two.text)
+pprint.pprint(resp)
 
 #List information regarding domain location
 print("The city is : "    + resp["city"])

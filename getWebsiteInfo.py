@@ -28,10 +28,4 @@ rqst_two = requests.get("https://ipinfo.io/"+getIP +"/json")
 resp = json.loads(rqst_two.text)
 pprint.pprint(resp)
 
-#List information regarding domain location
-print("The city is : "    + resp["city"])
-print("The country is : " + resp["country"])
-print("The region is : "  + resp["region"])
-print("The location is : "+ resp["loc"])
-
 

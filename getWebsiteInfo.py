@@ -17,7 +17,8 @@ if len(sys.argv) < 2:
 
 #Make request and print http header info
 rqst_one = requests.get("https://"+sys.argv[1])
-print("\n"+pprint.pprint(str(rqst_one.headers)))
+pprint.pprint(rqst_one)
+print("\n" + str(rqst_one.headers))
 
 #Get IP address
 getIP = socket.gethostbyname(sys.argv[1])

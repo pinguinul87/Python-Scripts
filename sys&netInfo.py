@@ -21,7 +21,7 @@ def netstat():
 
 def mynet():
 
-    net = ipaddress.ip_network('192.168.1.0/24')
+    net = ipaddress.ip_network('192.168.1.0/24')  #add your network here in CIDR notation
 
     for i in net.hosts():
         i=str(i)

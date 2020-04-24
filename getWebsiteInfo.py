@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-This script will return info from a given domanin.
+This script will return information for a given domanin.
 Will return the location, city, country and IP address beased on the data stored on ipinfo.io
 """
 

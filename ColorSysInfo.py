@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Returns some system information like IP address, top 10 procs and disk space in a colors.
+Returns some system information like IP address, top 10 procs and disk space.
 
 """
 import subprocess

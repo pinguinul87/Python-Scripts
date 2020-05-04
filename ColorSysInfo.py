@@ -59,7 +59,7 @@ def top_10_procs():
             procID = proc.pid
             print(procName, ' ---> ', procID)
         except (psutil.NoSuchProcess, psutil.AccesssDenied, psutil.ZombieProcess):
-            print(f"{colors.red}[-] System Error\n{colors.END}"
+            print(f"{colors.red}[-] System Error\n{colors.END}")
 
 
 def main():

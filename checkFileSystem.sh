@@ -22,7 +22,7 @@ check_fs (){
         do
                 usep=$(echo $output | awk '{print $1}' | cut -d'%' -f1)
                 fs=$(echo $output | awk '{print $2}')
-                if [ $usep -ge 6 ]; then
+                if [ $usep -ge 80 ]; then
                         echo "Low file system space $fs $usep% used, on $(hostname)"
                 fi
         done

@@ -63,10 +63,12 @@ def top_10_procs():
 
 
 def main():
+    print("Start of scrript.")
     uname_func()
     disk_func()
     tmp_space()
     ip_addr()
     top_10_procs()
+    print("End of script.")
 
 main()
